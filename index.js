@@ -1,7 +1,5 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-require("./mailService");
-const path = require("path");
 
 // Inicializar la aplicación
 const app = express();
