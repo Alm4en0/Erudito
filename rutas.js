@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { sendMail } = require("./mailService"); // Importar desde el nuevo archivo
+const { sendMail } = require("./mailService"); // Importar desde el archivo mailService.js
 
 router.get("/about", (req, res) => {
   res.sendFile("./views/about.html", { root: __dirname });

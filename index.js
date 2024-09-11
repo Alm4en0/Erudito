@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const { sendMail } = require("./mailService");
+require("./mailService");
 const path = require("path");
 
 // Inicializar la aplicación
@@ -23,5 +23,3 @@ app.use("/vendor", express.static("vendor"));
 app.listen(port, () => {
   console.log(`Server on port ${port}`);
 });
-
-module.exports = { sendMail }; // Esto ya no debería ser necesario si no lo usas en otros módulos
